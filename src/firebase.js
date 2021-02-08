@@ -1,5 +1,10 @@
 import firebase from 'firebase';
 
+// importing our firebase database above and our config below \\
+// our firebaseApp then passes the firebaseConfig into the initializeApp method of firebase. \\
+// The db then goes the firebaseApp we just initialized and grabs firestore. Then giving db access to our firebaseApp variable. \\
+// In the auth variable we will use firebase for our email authentication with firebase.auth(); \\
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyD_wq2W-waYhor0wilUYmNehiyjg2U_gwI",
