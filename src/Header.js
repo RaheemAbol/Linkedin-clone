@@ -12,6 +12,13 @@ import { useDispatch } from 'react-redux';
 import { logout } from './features/userSlice';
 import { auth } from './firebase';
 
+
+//imported material ui icons to use for the Header left search and the Header right Icons\\
+//imported HeaderOption component for the header right section. Useing the props of Icon to pass in our material-ui icons.\\
+// our logoutOfApp function does two things. 1 logs us out of firebase using the useDispatch() hook and the signOut() method on auth \\
+
+
+
 function Header() {
  
     const dispatch = useDispatch();
