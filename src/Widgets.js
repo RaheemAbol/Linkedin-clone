@@ -3,6 +3,11 @@ import './Widgets.css';
 import InfoIcon from "@material-ui/icons/Info";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
+// in our newsArticle we import FiberManualRecordIcon to display on the left side of our widget article
+// on the right side we display the heading and subtitle passed to the function \\
+// we use the newsArticle function to return our jsx below starting at line 32 || the first arguement being the header second being subtitle \\
+
+
 function Widgets() {
 
 const newsArticle = (heading, subtitle) => (
