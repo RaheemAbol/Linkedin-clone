@@ -7,6 +7,13 @@ import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 
+// In our post function we pass destructed props to our forwardRef hook ->  forwardRef(({ name, description, message, photoUrl}, ref) \\
+// In the "post__buttons" container we import our InputOption component and pass is values for (Icon, title, color)\\
+// In the "post__header" container we pass in our destructured props \\
+// inside of our Avatar we will post the photoUrl if there isn't one then we will post the users name \\
+// in our Post function we use the forwardRef hook. Then calling the ref in the div "post" with ref={ref} . this will lead to our flipmove animation inside of our feed component\\
+
+
 const Post = forwardRef(({ name, description, message, photoUrl}, ref) => {
     return (
         <div ref={ref} className="post">
