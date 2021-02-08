@@ -4,6 +4,21 @@ import { login } from './features/userSlice';
 import { auth } from './firebase';
 import './Login.css';
 
+
+// in our Login we map our states (email, password, name, profilePic) to the appropriate fields in the input of form ex.(value={name})\\
+// then set the state with the onChange ex.(onChange={(e) => setName(e.target.value)})\\
+// inside of the register function we if there was no name we return an alert\\
+//^then we pass in auth from firebase and use the createUserWithEmailAndPassword method passing in email adn password args.\\
+// If the user is created in the .then successfully we're going to update the users profile by adding a picture { displayName: name, photoURL: profilePic }\\
+//^ displayName & photoURL are keys that refer to firebase. We attach our local state to them with name & profilePic \\
+// then we push the user into the redux store with our dispatch(login) importing the login action from userSlice \\
+// the login action will have a catch error incase any problem occurs alerting an error \\
+// in our login__register span we target the register fuction with the onClick event listener \\
+// in the submit button we target the loginToApp function with the onClick event listener \\
+// inside of the loginToApp function we pass e.preventDefault to prevent a refresh \\
+// we then pass the signInWithEmailAndPassword method to the auth. We then get a user identification object and then dispatch it into redux.. if there's an error then we will catch it with  .catch((error) => alert(error))\\
+
+
 function Login() {
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
