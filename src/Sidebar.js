@@ -5,6 +5,14 @@ import "./Sidebar.css";
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 
+// Imported Avatar from material-ui for the user image underneath will diplay the user name and email\\
+// Sidebar__ stats will display a hardcoded values for Who's viewed you and Views on post\\
+// The recentItem function returns whatever the jsx {topic} is passed in.  Later invoked in div sidebar bottom ex.{recentItem('------')}\\ 
+// In sidebar we import the user from the redux store with  (const user = useSelector(selectUser)) using the useSelector hook and passing in our selectUser \\
+// with our user we will pass our user props to our h2 and h4 in our sidebar div {user.email} {user.displayName}
+
+
+
 function Sidebar() {
     const user = useSelector(selectUser);
 
