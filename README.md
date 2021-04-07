@@ -30,3 +30,5 @@ Linkedin-clone is a social media application where users can post messages, and 
 -firebase
 
 ## What the app looks like
+https://github.com/RaheemAbol/Linkedin-clone/blob/main/public/linkedinlogin.PNG
+https://github.com/RaheemAbol/Linkedin-clone/blob/main/public/linkedinpic1.PNG
