@@ -31,7 +31,8 @@ Linkedin-clone is a social media application where users can post messages, and 
 
 ## Check it out
 
-slack-clone-ra.web.app
+linkedin-clone-ra.web.app
 
-slack-clone-ra.firebaseapp.com
+linkedin-clone-ra.firebaseapp.com
+
 
